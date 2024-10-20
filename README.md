@@ -1,4 +1,10 @@
-# A python template project
+# Py Project
+
+## A python template project
+
+This template provides a solid foundation for your Python project. Let's go through each component and explain how it addresses your requirements:
+
+The following is the project structure:
 
 ```bash
 project_name/
@@ -38,8 +44,6 @@ project_name/
 ├── README.md
 └── requirements.txt
 ```
-
-This template provides a solid foundation for your Python project. Let's go through each component and explain how it addresses your requirements:
 
 ## Environment Isolation:
 We use pyproject.toml for project configuration and dependency management.
