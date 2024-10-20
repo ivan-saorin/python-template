@@ -1,3 +1,4 @@
+import argparse
 import logging
 import colorlog
 
@@ -14,9 +15,23 @@ formatter = colorlog.ColoredFormatter(
 ch.setFormatter(formatter)
 logger.addHandler(ch)
 
-# Log some messages with different levels
-logger.debug('This is a debug message')
-logger.info('This is an info message')
-logger.warning('This is a warning message')
-logger.error('This is an error message')
-logger.critical('This is a critical message')
+def testLogging():
+  # Log some messages with different levels
+  logger.debug('This is a debug message')
+  logger.info('This is an info message')
+  logger.warning('This is a warning message')
+  logger.error('This is an error message')
+  logger.critical('This is a critical message')
+
+def main():
+  logger.info("Hello, World!")
+
+  #  parser = argparse.ArgumentParser(description='Py Project CLI')
+  #  parser.add_argument('--run-api', action='store_true', help='Run the API')
+  #  args = parser.parse_args()
+    
+  # if args.run_api:
+  #  start_api()
+
+if name == "main":
+  main()
