@@ -1,5 +1,75 @@
 # A python template project
 
+```bash
+project_name/
+│
+├── .github/
+│   └── workflows/
+│       └── ci.yml
+│
+├── .vscode/
+│   └── settings.json
+│
+├── api/
+│   ├── __init__.py
+│   ├── main.py
+│   └── routes/
+│       ├── __init__.py
+│       └── home.py
+│
+├── docs/
+│   └── README.md
+│
+├── src/
+│   ├── __init__.py
+│   └── main.py
+│
+├── tests/
+│   ├── __init__.py
+│   ├── test_api.py
+│   └── test_main.py
+│
+├── .dockerignore
+├── .env.example
+├── .gitignore
+├── Dockerfile
+├── docker-compose.yml
+├── pyproject.toml
+├── README.md
+└── requirements.txt
+```
+
+This template provides a solid foundation for your Python project. Let's go through each component and explain how it addresses your requirements:
+
+## Environment Isolation:
+We use pyproject.toml for project configuration and dependency management.
+requirements.txt lists all dependencies.
+
+## Easy to run from command line and VSCode:
+
+The project structure is standard, making it easy to run from both CLI and VSCode.
+.vscode/settings.json can include VSCode-specific settings.
+Easy to upgrade:
+
+Using pyproject.toml makes it easy to manage and upgrade dependencies.
+API with OpenAPI documentation, default routes, and Streamlit GUI:
+
+The api/ directory contains the API structure.
+api/main.py sets up FastAPI with automatic OpenAPI documentation.
+api/routes/home.py includes a default route for the Streamlit GUI.
+Tests:
+
+The tests/ directory contains test files for both the main program and API.
+
+## Dockerfile and docker-compose:
+
+Dockerfile is included for building the API container.
+docker-compose.yml is ready for extension with additional services.
+AI-ready configuration:
+.env.example provides a template for storing API keys and configurations securely.
+
+# A python template project
+
 No problem at all, here are the instructions for setting up a Python project with a virtual environment that can be launched from the command line on Windows 11, with additional chapters on how to easily maintain a `requirements.txt` file, how to run your `main.py` file as a Windows command with parameter parsing, how to organize your sources and tests in separate directories, how to have colored console logging, and how to set up the project as a template in your GitHub account, and how to add the command to the virtual environment in case you don't want to change your PATH environment variable:
 
 ## Setting up a Python Project with Virtual Environment on Windows 11
